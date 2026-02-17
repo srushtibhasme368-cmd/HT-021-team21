@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Smart City</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Colorful background */
+body{
+    background: linear-gradient(135deg,#4facfe,#00f2fe,#43e97b);
+   background:url("/image/smartcity.jpg") center/cover no-repeat;
+    
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* Main container */
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    border-radius:14px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    color:#0077ff;
+    margin-bottom:15px;
+}
+
+.intro{
+    text-align:center;
+    color:#555;
+    margin-bottom:40px;
+    line-height:1.6;
+}
+
+/* Card grid */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+/* Individual card */
+.card{
+    flex:1 1 260px;
+    background:linear-gradient(135deg,#f6aeae,#9ebac8);
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-6px) scale(1.02);
+}
+
+/* Card titles */
+.card h2{
+    color:#0077ff;
+    margin-bottom:10px;
+}
+
+/* Card text */
+.card p{
+    color:#444;
+    line-height:1.6;
+    font-size:14px;
+}
+
+/* Highlight banner */
+.banner{
+    margin-top:35px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    font-size:17px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>About Our Smart City Platform</h1>
+
+    <p class="intro">
+        Our Smart City Waste Management system connects citizens and authorities
+        through technology to improve cleanliness, safety, and sustainability.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>
+                To build a cleaner and smarter city by enabling digital reporting
+                of civic issues and improving response time of municipal services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Our Focus</h2>
+            <p>
+                The platform handles garbage overflow, road damage, street light
+                failures, and recycling services to maintain urban infrastructure.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Our Technology</h2>
+            <p>
+                We use GPS location tracking, digital reporting, and automated
+                alerts to ensure faster communication between citizens and
+                authorities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Citizen Benefits</h2>
+            <p>
+                Residents can report problems easily, track updates, and
+                contribute to a safer, cleaner, and more sustainable city.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <a href="wastemanagement.html">How to reuse waste cloths & garbage</a>
+    </div>
+
+</div>
+
+</body>
+</html>

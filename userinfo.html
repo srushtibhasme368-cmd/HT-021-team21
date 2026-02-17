@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial;
+            background:url('https://images.unsplash.com/photo-1497366216548-37526070297c') no-repeat center/cover;
+        }
+
+        .navbar{
+            background:#0f2027;
+            color:white;
+            padding:15px;
+            text-align:center;
+            font-size:22px;
+        }
+
+        .container{
+            width:50%;
+            margin:60px auto;
+            background:rgba(255,255,255,0.95);
+            padding:25px;
+            border-radius:10px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border-radius:5px;
+            border:1px solid gray;
+        }
+
+        .btn{
+            background:linear-gradient(45deg,#007bff,#00c6ff);
+            color:white;
+            padding:12px;
+            border:none;
+            border-radius:25px;
+            cursor:pointer;
+            width:100%;
+            font-size:16px;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">Complaint Management System</div>
+
+<div class="container">
+    <h2>User Information</h2>
+
+    <form action="#complaint.html">
+        <input type="text" placeholder="Enter Name" required>
+        <input type="tel" placeholder="Enter Mobile Number" required>
+        <input type="text" placeholder="Enter Address" required>
+        <input type="text" placeholder="Enter Area" required>
+        <input type="text" placeholder="Enter Landmark">
+
+        <button class="btn"><a href="complaintform.html">Go To Complaint Form</a></button>
+    </form>
+</div>
+
+</body>
+</html>
