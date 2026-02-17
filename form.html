@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart City Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url('/images/form2.jpg');
+    background-size: cover;
+    ba
+}
+
+/* Container */
+.container{
+    width:800px;
+    height:450px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    position:relative;
+}
+
+/* Left info panel */
+.info{
+    width:50%;
+    background:linear-gradient(120deg,#00c6ff,#0072ff);
+    color:white;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    transition:0.6s;
+}
+
+.info h1{
+    margin-bottom:15px;
+}
+
+.info p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Form panel */
+.form-box{
+    width:50%;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    transition:0.6s;
+}
+
+.form-box h2{
+    margin-bottom:20px;
+    color:#0072ff;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    border-color:#0072ff;
+    box-shadow:0 0 5px rgba(0,114,255,0.4);
+}
+
+button{
+    padding:12px;
+    background:#0072ff;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0057cc;
+}
+
+/* Slide animation */
+.container.active .info{
+    transform:translateX(100%);
+}
+
+.container.active .form-box{
+    transform:translateX(-100%);
+}
+
+/* Switch button */
+.switch{
+    margin-top:15px;
+    font-size:13px;
+    color:#555;
+    cursor:pointer;
+    text-align:center;
+}
+
+.switch span{
+    color:#0072ff;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+    <!-- Info Panel -->
+    <div class="info">
+        <h1>Smart City Portal</h1>
+        <p>
+        Access digital services, citizen dashboard, city updates, 
+        and smart governance tools with one secure login.
+        </p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-box">
+        <h2>Citizen Login</h2>
+
+        <div class="input-box">
+            <input type="text" placeholder="Email / Mobile">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button>Login</button>
+
+        <div class="switch" onclick="slideForm()">
+            New user? <span>Register Here</span>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function slideForm(){
+    document.getElementById("container").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
